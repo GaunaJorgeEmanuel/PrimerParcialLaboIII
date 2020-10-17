@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>PrimerParcialLaboIII GaunaJorgeEmanuel</title>
+    
+    <script src="./js/get.js"></script>
+    <script src="./js/index.js"></script>
+    <script src="./js/post.js"></script>
+
+    <link rel="stylesheet" href="./css/grilla.css">
+</head>
+<body background = "./img/stretched-1360-768-410498.jpg">
+        <header>
+                
+        </header>
+                
+        <div class= "contenedor" id ="contenedorModificar" hidden>
+                <form>
+                        <input type = "button" class = "cancelar" value = "x" id = "btnCerrar">  
+                        <br>
+                 <span id="id" hidden></span>
+                    Nombre <br>
+                    <input type= "text" placeholder= "Nombre materia..." class = "sinError" name = "txtnombre" size = "50" maxlength="35" id= "nombreM"/><br>
+                    Cuatrimestre<br>
+                    <select name="select" id =cuatrimestre disabled>
+                        <option value="1">1</option> 
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+
+                      </select> <br>
+                        Turno <br>
+                        Mañana:
+
+                       <input type = "radio" name = "radiB" id ="m" value= "Mañana"/> Noche
+
+                       <input type = "radio" name = "radiB" id= "n" value = "Noche"/>
+                       <br> Fecha<br>
+                       <input type= "date"  id= "fechaM"/> 
+                       <br> <br>
+                      <input type = "button" class=  "verdeBoton" value = "Modificar" id = "btnGuardar"> 
+                      <input type = "button" class=  "rojo" value = "Elminar" id = "btnEliminar"> 
+                       <br>
+                    </form>
+        </div>
+
+
+
+        
+       
+        <section>
+            <h3>* MATERIAS *</h3><br>
+            <table>
+                <thead>
+                        <th>ID</th>
+                        <th>Materia</th>
+                        <th>Cuatrimestre</th>
+                        <th>Fecha Final</th> 
+                        <th>Turno</th>                       
+                </thead>
+                <tbody id="bodyTabla">
+                </tbody>                        
+            </table>
+        </section>
+        <div class="fixed" id=load hidden>
+            
+            <img src="./giphy.webp" class "fixed">
+            
+         </div>
+        
+   
+        <footer>
+    
+        </footer>
+</body>
+</html>

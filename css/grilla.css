@@ -1,0 +1,110 @@
+html {
+    width: 100%;
+    height: 100%;
+    
+ }
+ body {
+    width: 100%;
+    height: 100%;
+ }
+h3
+{
+    color: rgb(28, 255, 7);
+    text-align:center;
+    letter-spacing: 4px;
+    font-size: 30px;
+}
+th, td{
+    text-align: left;
+    padding: 8px;
+}
+.fixed
+{
+    position: fixed;
+    right: 25%;
+    top: 25%; 
+    opacity: 0.3;
+    
+
+}
+th{
+    
+    background: rgb(243, 0, 0);
+    color: white;
+}
+
+input[type=text]{
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0px;
+    display: inline-block;
+
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+input[type=button]:hover{
+    background-color: green;
+}
+
+
+tr:nth-child(even){
+   
+background-color:rgb(96, 255, 96);
+
+}
+
+table{
+    border-collapse: collapse;
+    width: 100%;
+}
+
+.contenedor{
+   
+    position: fixed;
+    right: 25%;
+    top: 25%; 
+
+    
+    animation-name: aparecer;
+    animation-duration: 2s;
+
+    width: 50%;
+    border-radius: 5px;
+    background-color: rgb(229, 255, 0);
+    padding: 20px;
+}
+
+.sinError{
+    border: 4px solid rgb(255, 103, 2);
+}
+
+.conError{
+    border: 4px solid red;
+}
+
+
+.btnX{
+    margin: 0 0 8px;
+    color: white;
+    background-color: red;
+}
+
+
+@keyframes aparecer{
+    from{opacity: 0}
+    to{opacity: 1}
+}
+.verdeBoton
+{
+    background: green;
+    color: white;
+}
+.verde{
+    background: rgb(72, 134, 226);
+    color: white;
+}
+.rojo{
+    background: red;
+    color: white;
+}
